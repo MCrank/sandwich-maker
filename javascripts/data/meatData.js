@@ -1,6 +1,10 @@
+import { setMyMeats, getMyMeats, meatListBuilder } from '../components/meat.js';
+
 function requestData() {
   const data = JSON.parse(this.responseText);
-  console.log('Meats: ', data.meats);
+  // console.log('Meats: ', data.meats);
+  setMyMeats(data.meats);
+  meatListBuilder(getMyMeats());
   // Put your functions here to handle the 'load' event
   // setCharacters(data.characters);
   // charactersBuilder(getCharacterz());
