@@ -1,3 +1,7 @@
 body {
   background-color: lightslategray;
 }
+
+#sammich-output {
+  border: 1px solid tomato;
+}

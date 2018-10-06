@@ -4,6 +4,11 @@ import { getCondimentsDB } from '../data/condimentsData.js';
 import { getMeatDB } from '../data/meatData.js';
 import { getVeggiesDB } from '../data/veggiesData.js';
 
+const printToDom = (stringToPrint, elementId) => {
+  const selectedDiv = document.getElementById(elementId);
+  selectedDiv.innerHTML = stringToPrint;
+};
+
 const loadData = () => {
   getBreadDB();
   getCheeseDB();
@@ -12,4 +17,4 @@ const loadData = () => {
   getVeggiesDB();
 };
 
-export { loadData };
+export { loadData, printToDom };

@@ -2,31 +2,31 @@
   "cheeses": [
     {
       "name": "Provolone",
-      "price": ".50"
+      "price": "0.50"
     },
     {
       "name": "Swiss",
-      "price": ".50"
+      "price": "0.50"
     },
     {
       "name": "Muenster",
-      "price": ".75"
+      "price": "0.75"
     },
     {
       "name": "Pepper Jack",
-      "price": ".80"
+      "price": "0.80"
     },
     {
       "name": "American",
-      "price": ".25"
+      "price": "0.25"
     },
     {
       "name": "Chedder",
-      "price": ".50"
+      "price": "0.50"
     },
     {
       "name": "Monteray Jack",
-      "price": ".50"
+      "price": "0.50"
     }
   ]
 }

@@ -1,6 +1,9 @@
+import { setMyBreads, getMyBreads, breadListBuilder } from '../components/bread.js';
 function requestData() {
   const data = JSON.parse(this.responseText);
-  console.log('Bread: ', data.breads);
+  // console.log('Bread: ', data.breads);
+  setMyBreads(data.breads);
+  breadListBuilder(getMyBreads());
   // Put your functions here to handle the 'load' event
   // setCharacters(data.characters);
   // charactersBuilder(getCharacterz());

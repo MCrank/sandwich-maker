@@ -13,7 +13,54 @@
 
 <body>
     <h1 class="text-center">Sammich Maker</h1>
-    <button type="button" class="btn btn-primary">This is a Button</button>
+
+    <div class="container sammich-builder">
+        <div class="row">
+            <div class="col-2">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#bread-content" role="tab">Breads</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#meat-content" role="tab">Meats</a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#cheese-content" role="tab">Cheeses</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#veggie-content" role="tab">Veggies</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#condiment-content" role="tab">Condiments</a>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="bread-content" role="tabpanel">
+
+                        <!-- <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                value="option3" disabled>
+                            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                        </div> -->
+
+
+                    </div>
+                    <div class="tab-pane fade" id="meat-content" role="tabpanel">We Have the Meats</div>
+                    <div class="tab-pane fade" id="cheese-content" role="tabpanel">Some Cheese and Whine</div>
+                    <div class="tab-pane fade" id="veggie-content" role="tabpanel">Veggies?</div>
+                    <div class="tab-pane fade" id="condiment-content" role="tabpanel">Condiments</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center" id="sammich-output">
+        Put a card here to show the sammich, price, and a button to order
+    </div>
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
