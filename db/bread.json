@@ -2,19 +2,19 @@
   "breads": [
     {
       "name": "White",
-      "price": ".50"
+      "price": "0.50"
     },
     {
       "name": "Wheat",
-      "price": ".50"
+      "price": "0.50"
     },
     {
       "name": "Rye",
-      "price": ".50"
+      "price": "0.50"
     },
     {
       "name": "Sourdough",
-      "price": ".75"
+      "price": "0.75"
     },
     {
       "name": "Chiabatta Roll",
@@ -26,7 +26,7 @@
     },
     {
       "name": "Pita",
-      "price": ".75"
+      "price": "0.75"
     }
   ]
 }

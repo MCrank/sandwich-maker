@@ -2,35 +2,35 @@
   "condiments": [
     {
       "name": "Ketchup",
-      "price": ".20"
+      "price": "0.20"
     },
     {
       "name": "Mustard",
-      "price": ".20"
+      "price": "0.20"
     },
     {
       "name": "Honey Mustard",
-      "price": ".20"
+      "price": "0.20"
     },
     {
       "name": "Mayo",
-      "price": ".20"
+      "price": "0.20"
     },
     {
       "name": "Spicy Mustard",
-      "price": ".20"
+      "price": "0.20"
     },
     {
       "name": "Cherry Pepper Relish",
-      "price": ".20"
+      "price": "0.20"
     },
     {
       "name": "Oil & Vinegar",
-      "price": ".20"
+      "price": "0.20"
     },
     {
       "name": "Oregano",
-      "price": ".20"
+      "price": "0.20"
     }
   ]
 }

@@ -2,23 +2,23 @@
   "meats": [
     {
       "name": "Oven Roasted Turkey",
-      "price": ".75"
+      "price": "0.75"
     },
     {
       "name": "Smoked Ham",
-      "price": ".75"
+      "price": "0.75"
     },
     {
       "name": "Roast Beef",
-      "price": ".75"
+      "price": "0.75"
     },
     {
       "name": "Pepperoni",
-      "price": ".75"
+      "price": "0.75"
     },
     {
       "name": "Salami",
-      "price": ".75"
+      "price": "0.75"
     },
     {
       "name": "Capicola",
@@ -30,7 +30,7 @@
     },
     {
       "name": "Chciken Breast",
-      "price": ".75"
+      "price": "0.75"
     }
   ]
 }
