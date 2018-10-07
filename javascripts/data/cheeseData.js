@@ -1,10 +1,11 @@
 import { getMyCheeses, setMyCheeses, cheeseListBuilder } from '../components/cheese.js';
+import { selectCheeseEvents } from '../events.js';
 
 function requestData() {
   const data = JSON.parse(this.responseText);
-  // console.log('Cheese: ', data.cheeses);
   setMyCheeses(data.cheeses);
   cheeseListBuilder(getMyCheeses());
+  selectCheeseEvents();
   // Put your functions here to handle the 'load' event
   // setCharacters(data.characters);
   // charactersBuilder(getCharacterz());
