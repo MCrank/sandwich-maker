@@ -1,10 +1,11 @@
 import { setMyMeats, getMyMeats, meatListBuilder } from '../components/meat.js';
+import { selectMeatEvents } from '../events.js';
 
 function requestData() {
   const data = JSON.parse(this.responseText);
-  // console.log('Meats: ', data.meats);
   setMyMeats(data.meats);
   meatListBuilder(getMyMeats());
+  selectMeatEvents();
   // Put your functions here to handle the 'load' event
   // setCharacters(data.characters);
   // charactersBuilder(getCharacterz());

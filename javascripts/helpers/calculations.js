@@ -2,4 +2,8 @@ const calculateBread = () => {
   console.log('Calculate Bread Here');
 };
 
-export { calculateBread };
+const calculateMeat = () => {
+  console.log('Calculate Meat Here');
+};
+
+export { calculateBread, calculateMeat };
