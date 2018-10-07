@@ -1,6 +1,10 @@
+import { setMyVeggies, getMyVeggies, veggieListBuilder } from '../components/veggies.js';
+
 function requestData() {
   const data = JSON.parse(this.responseText);
-  console.log('Veggies: ', data.veggies);
+  // console.log('Veggies: ', data.veggies);
+  setMyVeggies(data.veggies);
+  veggieListBuilder(getMyVeggies());
   // Put your functions here to handle the 'load' event
   // setCharacters(data.characters);
   // charactersBuilder(getCharacterz());
