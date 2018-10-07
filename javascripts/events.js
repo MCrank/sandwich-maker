@@ -1,4 +1,4 @@
-import { calculateBread } from './helpers/calculations.js';
+import { calculateBread, calculateMeat } from './helpers/calculations.js';
 
 const selectBreadEvents = () => {
   const breadsRadio = document.getElementsByClassName('bread-check');
@@ -9,8 +9,13 @@ const selectBreadEvents = () => {
   }
 };
 
-const attachEvents = () => {
-  selectBreadEvents();
+const selectMeatEvents = () => {
+  const meatsCheckBox = document.getElementsByClassName('meat-check');
+  for (let i = 0; i < meatsCheckBox.length; i++) {
+    meatsCheckBox[i].addEventListener('change', () => {
+      calculateMeat();
+    });
+  }
 };
 
-export { attachEvents };
+export { selectBreadEvents, selectMeatEvents };
