@@ -1,4 +1,10 @@
-import { calculateBread, calculateMeat, calculateCheese, calculateCondiments } from './helpers/calculations.js';
+import {
+  calculateBread,
+  calculateMeat,
+  calculateCheese,
+  calculateCondiments,
+  calculateVeggies
+} from './helpers/calculations.js';
 
 const selectBreadEvents = () => {
   const breadsRadio = document.getElementsByClassName('bread-check');
@@ -36,4 +42,13 @@ const selectCondimentEvents = () => {
   }
 };
 
-export { selectBreadEvents, selectMeatEvents, selectCheeseEvents, selectCondimentEvents };
+const selectVeggieEvents = () => {
+  const veggieCheckBox = document.getElementsByClassName('veggie-check');
+  for (let i = 0; i < veggieCheckBox.length; i++) {
+    veggieCheckBox[i].addEventListener('change', () => {
+      calculateVeggies();
+    });
+  }
+};
+
+export { selectBreadEvents, selectMeatEvents, selectCheeseEvents, selectCondimentEvents, selectVeggieEvents };
