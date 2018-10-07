@@ -6,4 +6,8 @@ const calculateMeat = () => {
   console.log('Calculate Meat Here');
 };
 
-export { calculateBread, calculateMeat };
+const calculateCheese = () => {
+  console.log('Calculate Cheese Here');
+};
+
+export { calculateBread, calculateMeat, calculateCheese };
