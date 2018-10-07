@@ -1,10 +1,11 @@
 import { setMyCondiments, getMyCondiments, condimentsListBuilder } from '../components/condiments.js';
+import { selectCondimentEvents } from '../events.js';
 
 function requestData() {
   const data = JSON.parse(this.responseText);
-  // console.log('Condiments: ', data.condiments);
   setMyCondiments(data.condiments);
   condimentsListBuilder(getMyCondiments());
+  selectCondimentEvents();
   // Put your functions here to handle the 'load' event
   // setCharacters(data.characters);
   // charactersBuilder(getCharacterz());

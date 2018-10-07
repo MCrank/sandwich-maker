@@ -10,4 +10,8 @@ const calculateCheese = () => {
   console.log('Calculate Cheese Here');
 };
 
-export { calculateBread, calculateMeat, calculateCheese };
+const calculateCondiments = () => {
+  console.log('Calculate Condiments Here');
+};
+
+export { calculateBread, calculateMeat, calculateCheese, calculateCondiments };
