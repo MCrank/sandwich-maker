@@ -1,10 +1,11 @@
 import { setMyVeggies, getMyVeggies, veggieListBuilder } from '../components/veggies.js';
+import { selectVeggieEvents } from '../events.js';
 
 function requestData() {
   const data = JSON.parse(this.responseText);
-  // console.log('Veggies: ', data.veggies);
   setMyVeggies(data.veggies);
   veggieListBuilder(getMyVeggies());
+  selectVeggieEvents();
   // Put your functions here to handle the 'load' event
   // setCharacters(data.characters);
   // charactersBuilder(getCharacterz());

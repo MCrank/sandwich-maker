@@ -13,7 +13,7 @@ const getMyVeggies = () => {
 const veggieListBuilder = (veggieArray) => {
   let newString = '';
   veggieArray.forEach((veggie) => {
-    newString += `<div class="form-check">
+    newString += `<div class="veggie-check form-check">
         <input class="form-check-input" type="checkbox" value="${veggie.name}" id="defaultCheck1">
         <label class="form-check-label" for="defaultCheck1">
             ${veggie.name} ($${veggie.price})
