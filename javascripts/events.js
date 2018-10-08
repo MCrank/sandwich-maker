@@ -19,11 +19,12 @@ const selectBreadEvents = () => {
   }
 };
 
+// Get list of all selected meats and pass to calculateMeat
 const selectMeatEvents = () => {
   const meatsCheckBox = document.getElementsByClassName('meat-check');
   for (let i = 0; i < meatsCheckBox.length; i++) {
     meatsCheckBox[i].addEventListener('change', (e) => {
-      calculateMeat();
+      calculateMeat(getCheckedBoxes('meat-checks'));
     });
   }
 };
@@ -53,6 +54,18 @@ const selectVeggieEvents = () => {
       calculateVeggies();
     });
   }
+};
+
+const getCheckedBoxes = (sammichPart) => {
+  const checkBoxes = document.getElementsByClassName(sammichPart);
+  let checkedBoxes = [];
+  for (let i = 0; i < checkBoxes.length; i++) {
+    const element = checkBoxes[i];
+    if (element.checked) {
+      checkedBoxes.push(element.value);
+    }
+  }
+  return checkedBoxes;
 };
 
 export { selectBreadEvents, selectMeatEvents, selectCheeseEvents, selectCondimentEvents, selectVeggieEvents };
