@@ -14,7 +14,7 @@ const cheeseListBuilder = (cheeseArray) => {
   let newString = '';
   cheeseArray.forEach((cheese) => {
     newString += `<div class="cheese-check form-check">
-    <input class="form-check-input" type="checkbox" value="${cheese.name}" id="defaultCheck1">
+    <input class="cheese-checks form-check-input" type="checkbox" value="${cheese.name}" id="defaultCheck1">
     <label class="form-check-label" for="defaultCheck1">
         ${cheese.name} ($${cheese.price})
     </label>

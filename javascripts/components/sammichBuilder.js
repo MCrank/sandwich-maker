@@ -16,7 +16,13 @@ const buildMeat = (meat) => {
   printToDom(newString, 'selected-meat');
 };
 
-const buildCheese = (cheese) => {};
+const buildCheese = (cheese) => {
+  let newString = '';
+  for (let i = 0; i < cheese.length; i++) {
+    newString += `<li>${cheese[i].name}<span class="ml-3">$${cheese[i].price}</span></li>`;
+  }
+  printToDom(newString, 'selected-cheese');
+};
 
 const buildCondiments = (condiments) => {};
 

@@ -31,8 +31,15 @@ const calculateMeat = (selectedMeat) => {
   sammichBuilder(mySammich, 'meat');
 };
 
-const calculateCheese = () => {
-  console.log('Calculate Cheese Here');
+const calculateCheese = (selectedCheese) => {
+  let mySelectedCheese = [];
+  const myCheese = getMyCheeses();
+  selectedCheese.forEach((cheese) => {
+    mySelectedCheese.push(myCheese.find((x) => x.name === cheese));
+  });
+  mySammich.cheese.splice(0, mySammich.cheese.length, ...mySelectedCheese);
+  sammichBuilder(mySammich, 'cheese');
+  //   console.log('Calculate Cheese Here');
 };
 
 const calculateCondiments = () => {

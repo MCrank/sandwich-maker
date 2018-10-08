@@ -33,7 +33,7 @@ const selectCheeseEvents = () => {
   const cheeseCheckBox = document.getElementsByClassName('cheese-check');
   for (let i = 0; i < cheeseCheckBox.length; i++) {
     cheeseCheckBox[i].addEventListener('change', (e) => {
-      calculateCheese();
+      calculateCheese(getCheckedBoxes('cheese-checks'));
     });
   }
 };
