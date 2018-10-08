@@ -32,7 +32,13 @@ const buildCondiments = (condiments) => {
   printToDom(newString, 'selected-condiments');
 };
 
-const buildVeggies = (veggies) => {};
+const buildVeggies = (veggies) => {
+  let newString = '';
+  for (let i = 0; i < veggies.length; i++) {
+    newString += `<li>${veggies[i].name}<span class="ml-3">$${veggies[i].price}</span></li>`;
+  }
+  printToDom(newString, 'selected-veggies');
+};
 
 const sammichBuilder = (mySammich, part) => {
   switch (part) {

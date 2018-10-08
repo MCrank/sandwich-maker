@@ -13,7 +13,6 @@ const selectBreadEvents = () => {
   for (let i = 0; i < breadsRadio.length; i++) {
     breadsRadio[i].addEventListener('change', (e) => {
       const selectedBread = e.target.value;
-      console.log(selectedBread);
       calculateBread(selectedBread);
     });
   }
@@ -51,7 +50,7 @@ const selectVeggieEvents = () => {
   const veggieCheckBox = document.getElementsByClassName('veggie-check');
   for (let i = 0; i < veggieCheckBox.length; i++) {
     veggieCheckBox[i].addEventListener('change', (e) => {
-      calculateVeggies();
+      calculateVeggies(getCheckedBoxes('veggie-checks'));
     });
   }
 };

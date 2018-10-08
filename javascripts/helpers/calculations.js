@@ -17,7 +17,6 @@ let mySammich = {
 const calculateBread = (selectedBread) => {
   // Get array of breads and populate mySammich.bread.  Use .splice and spread operator (...) to replace existing .breads array
   mySammich.bread.splice(0, mySammich.bread.length, ...getMyBreads().filter((x) => x.name === selectedBread));
-  console.log(mySammich.bread[0]);
   sammichBuilder(mySammich, 'bread');
 };
 
@@ -39,7 +38,6 @@ const calculateCheese = (selectedCheese) => {
   });
   mySammich.cheese.splice(0, mySammich.cheese.length, ...mySelectedCheese);
   sammichBuilder(mySammich, 'cheese');
-  //   console.log('Calculate Cheese Here');
 };
 
 const calculateCondiments = (selectedCondiment) => {
@@ -52,8 +50,14 @@ const calculateCondiments = (selectedCondiment) => {
   sammichBuilder(mySammich, 'condiments');
 };
 
-const calculateVeggies = () => {
-  console.log('Calcualte Veggies Here');
+const calculateVeggies = (selectedVeggie) => {
+  let mySelectedVeggie = [];
+  const myVeggie = getMyVeggies();
+  selectedVeggie.forEach((veggie) => {
+    mySelectedVeggie.push(myVeggie.find((x) => x.name === veggie));
+  });
+  mySammich.veggies.splice(0, mySammich.veggies.length, ...mySelectedVeggie);
+  sammichBuilder(mySammich, 'veggies');
 };
 
 export { calculateBread, calculateMeat, calculateCheese, calculateCondiments, calculateVeggies };
