@@ -14,7 +14,7 @@ const condimentsListBuilder = (condimentsArray) => {
   let newString = '';
   condimentsArray.forEach((condiment) => {
     newString += `<div class="condiment-check form-check">
-        <input class="form-check-input" type="checkbox" value="${condiment.name}" id="defaultCheck1">
+        <input class="condiment-checks form-check-input" type="checkbox" value="${condiment.name}" id="defaultCheck1">
         <label class="form-check-label" for="defaultCheck1">
             ${condiment.name} ($${condiment.price})
         </label>

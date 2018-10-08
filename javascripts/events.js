@@ -42,7 +42,7 @@ const selectCondimentEvents = () => {
   const condimentCheckBox = document.getElementsByClassName('condiment-check');
   for (let i = 0; i < condimentCheckBox.length; i++) {
     condimentCheckBox[i].addEventListener('change', (e) => {
-      calculateCondiments();
+      calculateCondiments(getCheckedBoxes('condiment-checks'));
     });
   }
 };
