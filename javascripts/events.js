@@ -6,11 +6,15 @@ import {
   calculateVeggies
 } from './helpers/calculations.js';
 
+// import {} from './components/';
+
 const selectBreadEvents = () => {
   const breadsRadio = document.getElementsByClassName('bread-check');
   for (let i = 0; i < breadsRadio.length; i++) {
-    breadsRadio[i].addEventListener('change', () => {
-      calculateBread();
+    breadsRadio[i].addEventListener('change', (e) => {
+      const selectedBread = e.target.value;
+      console.log(selectedBread);
+      calculateBread(selectedBread);
     });
   }
 };
@@ -18,7 +22,7 @@ const selectBreadEvents = () => {
 const selectMeatEvents = () => {
   const meatsCheckBox = document.getElementsByClassName('meat-check');
   for (let i = 0; i < meatsCheckBox.length; i++) {
-    meatsCheckBox[i].addEventListener('change', () => {
+    meatsCheckBox[i].addEventListener('change', (e) => {
       calculateMeat();
     });
   }
@@ -27,7 +31,7 @@ const selectMeatEvents = () => {
 const selectCheeseEvents = () => {
   const cheeseCheckBox = document.getElementsByClassName('cheese-check');
   for (let i = 0; i < cheeseCheckBox.length; i++) {
-    cheeseCheckBox[i].addEventListener('change', () => {
+    cheeseCheckBox[i].addEventListener('change', (e) => {
       calculateCheese();
     });
   }
@@ -36,7 +40,7 @@ const selectCheeseEvents = () => {
 const selectCondimentEvents = () => {
   const condimentCheckBox = document.getElementsByClassName('condiment-check');
   for (let i = 0; i < condimentCheckBox.length; i++) {
-    condimentCheckBox[i].addEventListener('change', () => {
+    condimentCheckBox[i].addEventListener('change', (e) => {
       calculateCondiments();
     });
   }
@@ -45,7 +49,7 @@ const selectCondimentEvents = () => {
 const selectVeggieEvents = () => {
   const veggieCheckBox = document.getElementsByClassName('veggie-check');
   for (let i = 0; i < veggieCheckBox.length; i++) {
-    veggieCheckBox[i].addEventListener('change', () => {
+    veggieCheckBox[i].addEventListener('change', (e) => {
       calculateVeggies();
     });
   }
